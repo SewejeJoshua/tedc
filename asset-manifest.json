@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tedc/static/css/main.d6d1721e.css",
-    "main.js": "/tedc/static/js/main.72e616ae.js",
+    "main.js": "/tedc/static/js/main.09b1d04a.js",
     "static/js/146.4dc84563.chunk.js": "/tedc/static/js/146.4dc84563.chunk.js",
     "static/media/youth2.jpg": "/tedc/static/media/youth2.b39265ea442af4dfd983.jpg",
     "static/media/objective.jpg": "/tedc/static/media/objective.14d9eef0c1a2165d8028.jpg",
@@ -12,11 +12,11 @@
     "static/media/tutor.png": "/tedc/static/media/tutor.c99f9b8ab1c79e3180f0.png",
     "index.html": "/tedc/index.html",
     "main.d6d1721e.css.map": "/tedc/static/css/main.d6d1721e.css.map",
-    "main.72e616ae.js.map": "/tedc/static/js/main.72e616ae.js.map",
+    "main.09b1d04a.js.map": "/tedc/static/js/main.09b1d04a.js.map",
     "146.4dc84563.chunk.js.map": "/tedc/static/js/146.4dc84563.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d6d1721e.css",
-    "static/js/main.72e616ae.js"
+    "static/js/main.09b1d04a.js"
   ]
 }
