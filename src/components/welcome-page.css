@@ -1,0 +1,213 @@
+ .wcm-body {
+    background-color: #F2F8FC;
+ }
+ .first-view{ 
+    background-image: url('./images/youth2.jpg');
+    background-repeat: no-repeat;
+    height: 90vh; 
+    background-size: cover; 
+   
+ }
+ .first-view-content {
+     margin-top: 5%;
+     padding-top: 200px; 
+     padding-left: 90px;
+     text-align: left; 
+ }
+ .context-one {
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+    padding: 5px;
+ }
+ .context-two {
+    font-size: 20px;
+    color: #fff;
+    padding-top: 20px;
+ }
+ .context-three {
+    background: transparent;
+    padding: 15px;
+    margin-top: 20px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;  
+    border: none; 
+    min-width: 120px;
+    border: 1px solid #fff;
+ }
+ .second-view {
+    margin-top: 10%;
+ }
+ .second-view-content {
+    display: flex;
+ }
+ .obj {
+   margin-top: 5%;
+ }
+ .context-four {
+    height: 500px;
+    width: 500px;
+    padding-left: 40px;
+ }
+ .context-five { 
+    font-size: 50px;
+ }
+ .context-six {
+    padding: 0px 140px;
+    font-size: 20px;
+ }
+  .second-view-content-alias {
+    display: none;
+  } 
+  .third-view {
+    background-color: rgba(0, 0, 0, 0.678);
+    color: #F2F8FC;
+    margin-top: 10%;
+    height: 120vh;
+  }
+  .flex-one {
+    display: flex;
+  }
+  .object {
+    font-size: 50px;
+    color: #000;
+  }
+  .tutor {
+    height: 70px;
+    width: 70px;
+    margin-top: 80px;
+  }
+  .service-one {
+    display: flex;  
+    padding: 15px 55px; 
+    margin-left: 30px; 
+    margin: 10px;
+    background-color: #f2f8f2; 
+  }
+  .content-flex-one { 
+    color: black; 
+  }
+  .para-flex-one{
+   padding: 5px  18px;
+   font-size: 15px;
+  
+  }
+  .contact-us {
+    margin-top: 10%;
+    background-color: rgba(0, 0, 0, 0.678);
+    max-height: 80vh;
+    padding: 50px;
+  }
+  .contact-now { 
+    background-color: #F2F8FC;
+    width: 50%;   
+    margin-left: 25%;
+    padding: 30px 10px;
+    min-height: 30vh;
+  }
+  .contact-mail {
+    padding: 10px;
+    margin-bottom: 4%;
+    width: 70%;
+    text-align: center;
+    background: transparent;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+  .contact-login {
+    font-size: 50px;
+  }
+  .contact-mail {
+    
+
+  }
+  .contact-message {
+    padding: 10px;
+    margin-bottom: 4%;
+    width: 70%;
+    text-align: center;
+    background: transparent;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+  .contact-submit {
+    background: transparent;
+    padding: 15px;
+    margin-top: 20px;
+    height: 50px;
+    color: black;
+    text-align: center;
+    border-radius: 20px;  
+    border: none; 
+    min-width: 120px;
+    border: 1px solid black;
+  }
+ @media only screen and (max-width: 768px) {
+    .first-view { 
+        margin-top: -20px; 
+    }
+    .first-view-content {  
+        
+    }
+    
+     .second-view {
+        display: none;
+     }
+     .second-view-content-alias {
+        display: block;
+        margin-top: 30%;
+        background-image: url('./images/objective.jpg');
+        min-height: 40vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: black;
+     }
+     .obj-alias {
+        padding-top: 10px;
+     }
+     .context-five-alias {
+        font-size: 40px;
+        font-weight: bolder;
+     }
+     .context-six-alias {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 0px 10px;
+        color: #F2F8FC;
+     }
+     .third-view {   
+        margin-top: 20%; 
+         height: 120vh;
+     }
+     .service-one {
+        padding: 0px;  
+     }
+     .flex-one {
+        display: inline;
+     }
+     .object {
+        font-size: 40px;
+     }
+     .content-flex-one {
+        max-height: 40vh; 
+     }
+     .contact-us {
+        margin-top: 20%;
+        min-height: 15vh;
+     }
+     .contact-login {
+        font-size: 40px;
+     }
+     .contact-now {
+        margin-left: -10px;
+        min-width: 100%;
+    }
+ }

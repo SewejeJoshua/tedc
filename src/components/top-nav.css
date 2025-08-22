@@ -1,0 +1,149 @@
+.navigation {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 10vh; 
+    padding: 0;
+    margin: 0;  
+    color: #fff; 
+    position:  fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+} 
+.one-half {
+    display: flex;
+}
+.ayatola {
+    display: flex;
+}
+.ted-logo {
+    height: 70px;
+}
+.ted-name {
+    padding-left: 40px;
+}
+.two-half { 
+   margin-left: 380px;
+}
+.two-half, ul {
+    display: flex; 
+    padding: 2px;
+    gap: 50px;
+    list-style-type: none;
+}
+.two-half a{
+    text-decoration: none;
+    color: #fff;
+}
+.but-div {
+    margin-top: 0.5%;
+    margin-left: 5%;
+}
+.start { 
+    background-color: rgb(135, 206, 235);
+    padding: 15px;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;  
+    border: none; 
+    min-width: 120px;
+}
+.wel-typeUser {
+    display: none;
+    position: fixed;
+    background-color: #F2F8FC;
+    min-width: 150px; 
+    padding: 2px;
+    font-size: 13px;   
+    right: 0;
+    margin: -2px 10px; 
+}
+.wel-typeUser a {  
+    color: #000;
+    text-decoration: none;
+}
+.welCancel {
+    width: 20px;
+    padding-left: 120px;
+}
+.menu {
+    display: none;
+}
+.sideNav {
+    display: none;
+    right: 0;
+    background-color: black;
+    color: #fff;
+    min-width: 150px;
+    min-height: 30vh; 
+    padding: 10px;
+    font-size: 13px;   
+    margin: 0px -8px; 
+    font-size: 20px;
+    position: fixed; 
+
+}
+.sideNav a {
+    color: #fff;
+    text-decoration: none;
+}
+.side-close {
+    margin-left: 140px;
+    width: 35px;
+}
+.side-typeUser {
+    display: none;
+    background-color: #F2F8FC;
+    min-width: 120px; 
+    padding: 2px;
+    font-size: 15px;   
+    margin: 0px 30px; 
+    margin-right: 30px;
+    border-radius: 15px;
+}
+.side-button {
+    color: #000;
+    font-size: 15px; 
+    background-color:  rgb(135, 206, 235);
+    padding: 15px;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;  
+    border: none; 
+}
+.side-typeUser a {
+    color: #000;
+    text-decoration: none;
+}
+.continue-teach, .continue-learn, .continue-lancer, .continue-counsel {
+    background-color: rgb(135, 206, 235);
+    padding: 15px;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;  
+    border: none; 
+    min-width: 120px;
+}
+@media screen  and (max-width: 640px){
+     .navigation {
+        position: fixed;
+     }
+    .ted-name {
+        padding-left: 10px;
+    }
+    .ayatola {
+        display: none;
+    }
+    .menu {
+      display: flex;
+      margin-left: 190px;
+      width: 50px;
+      height: 50px;
+      margin-top: 15px;
+    }
+    .one-half {
+        margin-top: 10px;
+    }
+    
+}

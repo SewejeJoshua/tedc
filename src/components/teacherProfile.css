@@ -1,0 +1,94 @@
+/* TeacherProfile.css */
+
+:root {
+  --color-primary: #0052cc;
+  --color-primary-dark: #003d99;
+  --color-text: #172b4d;
+  --color-bg: #f9fbfc;
+  --color-button-text: #fff;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  font-family: var(--font-family);
+  color: var(--color-text);
+}
+
+.teacher-container {
+  max-width: 480px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 40px 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: var(--color-primary);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #4a4f58;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.action-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-button-text);
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,82,204,0.35);
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--color-primary-dark);
+  box-shadow: 0 8px 16px rgba(0,61,153,0.45);
+  outline: none;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  .teacher-container {
+    margin: 40px 20px;
+    padding: 32px 20px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
