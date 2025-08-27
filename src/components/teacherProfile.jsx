@@ -9,16 +9,13 @@ export default function TeacherProfile() {
   const startMeeting = () => {
     const meetingID = Date.now().toString();
 
-    // Dynamically detect repo name (works for any GitHub Pages repo)
-    const repoName = window.location.pathname.split("/")[1];
-    const studentLink = `${window.location.origin}/${tedc}/#/student-call/${meetingID}`;
+    // Since repo name is "tedc", build GitHub Pages link correctly
+    const studentLink = `${window.location.origin}/tedc#/student-call/${meetingID}`;
 
     navigator.clipboard
       .writeText(studentLink)
       .then(() =>
-        alert(
-          `Student join link copied to clipboard:\n${studentLink}`
-        )
+        alert(`Student join link copied to clipboard:\n${studentLink}`)
       )
       .catch(() =>
         alert(`Failed to copy. Here is the link:\n${studentLink}`)
