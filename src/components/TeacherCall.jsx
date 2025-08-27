@@ -24,12 +24,20 @@ export default function TeacherCall() {
     );
 
     const zp = ZegoUIKitPrebuilt.create(kitToken);
+
+    // Generate student join link with repo name for GitHub Pages
+    const pathParts = window.location.pathname.split("/").filter(Boolean);
+    const repoName = pathParts.length > 0 ? pathParts[0] : "";
+    const studentLink = repoName
+      ? `${window.location.origin}/${repoName}#/student-call/${meetingID}`
+      : `${window.location.origin}#/student-call/${meetingID}`;
+
     zp.joinRoom({
       container: element,
       sharedLinks: [
         {
           name: "Student Join Link",
-          url: `${window.location.origin}/student-call/${meetingID}`,
+          url: studentLink,
         },
       ],
       scenario: {
