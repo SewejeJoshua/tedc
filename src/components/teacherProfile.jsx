@@ -8,12 +8,23 @@ export default function TeacherProfile() {
 
   const startMeeting = () => {
     const meetingID = Date.now().toString();
-    const studentLink = `${window.location.origin}/student-call/${meetingID}`;
 
-    navigator.clipboard.writeText(studentLink)
-      .then(() => alert(`Student join link copied to clipboard:\n${studentLink}`))
-      .catch(() => alert(`Failed to copy. Here is the link:\n${studentLink}`));
+    // Dynamically detect repo name (works for any GitHub Pages repo)
+    const repoName = window.location.pathname.split("/")[1];
+    const studentLink = `${window.location.origin}/${tedc}/#/student-call/${meetingID}`;
 
+    navigator.clipboard
+      .writeText(studentLink)
+      .then(() =>
+        alert(
+          `Student join link copied to clipboard:\n${studentLink}`
+        )
+      )
+      .catch(() =>
+        alert(`Failed to copy. Here is the link:\n${studentLink}`)
+      );
+
+    // Teacher joins their own call
     navigate(`/teacher-call/${meetingID}`);
   };
 
@@ -21,7 +32,10 @@ export default function TeacherProfile() {
     <main className="teacher-container">
       <section className="header-section">
         <h1 className="title">Welcome Back, Teacher</h1>
-        <p className="subtitle">Start a new virtual class session and share the join link with your students.</p>
+        <p className="subtitle">
+          Start a new virtual class session and share the join link with your
+          students.
+        </p>
       </section>
       <section className="action-section">
         <button className="btn-primary" onClick={startMeeting}>
