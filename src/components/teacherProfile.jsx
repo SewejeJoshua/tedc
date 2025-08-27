@@ -9,9 +9,16 @@ export default function TeacherProfile() {
   const startMeeting = () => {
     const meetingID = Date.now().toString();
 
-    // Since repo name is "tedc", build GitHub Pages link correctly
-    const studentLink = `${window.location.origin}/tedc#/student-call/${meetingID}`;
+    // Detect repo name from GitHub Pages URL
+    const pathParts = window.location.pathname.split("/").filter(Boolean);
+    const repoName = pathParts.length > 0 ? pathParts[0] : ""; // "tedc" when deployed
 
+    // Student link
+    const studentLink = repoName
+      ? `${window.location.origin}/${repoName}#/student-call/${meetingID}`
+      : `${window.location.origin}#/student-call/${meetingID}`;
+
+    // Copy link to clipboard
     navigator.clipboard
       .writeText(studentLink)
       .then(() =>
